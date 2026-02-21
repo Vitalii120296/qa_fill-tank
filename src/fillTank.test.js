@@ -47,9 +47,6 @@ describe("fillTank", () => {
 
     fillTank(customer, 50, 10);
 
-    const poured = 2;
-    const expectedSpent = 100;
-
     expect(customer.vehicle.fuelRemains).toBe(10);
     expect(customer.money).toBeCloseTo(0, 2);
   });
